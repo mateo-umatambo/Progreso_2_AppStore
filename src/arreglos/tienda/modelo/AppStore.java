@@ -12,8 +12,8 @@ public class AppStore {
     }
 
     private void cargarDatos(){
-        juegos[++cont] = new Juego("Penerico 4k", "Interactivo", 15, 45, 50);
-        juegos[++cont] = new Juego("Polnito For Free", "Todo Publico", 230, 1, 300);
+        juegos[++cont] = new Juego("Fortnite", "Interactivo", 15, 45, 50);
+        juegos[++cont] = new Juego("Valorant", "Todo Publico", 230, 1, 300);
     }
 
     public Juego[] getJuegos() {
