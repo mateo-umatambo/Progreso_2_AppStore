@@ -8,7 +8,7 @@ public class AppStore {
     public AppStore(){
         juegos = new Juego[MAX];
         cont = -1;
-        cargarDatos();
+        //cargarDatos();
     }
 
     private void cargarDatos(){
@@ -20,10 +20,15 @@ public class AppStore {
         return juegos;
     }
 
-    public void agregarJuegos(Juego j){ //en lugar del metodo SET
+    public int getCont() {
+        return cont;
+    }
+
+    public boolean agregarJuegos(Juego j){ //en lugar del metodo SET
         if (j != null && cont < MAX -1){
             juegos[++cont] = j;
         }
+        return false;
     }
 
     public Juego buscarJuego(String nombre){
@@ -33,7 +38,6 @@ public class AppStore {
                     return juegos[i];
                 }
             }
-            return null;
         }
         return null;
     }
